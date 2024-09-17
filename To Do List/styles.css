@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    width: 450px; /* Increased width */
+    height: 650px; /* Increased height */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-family: 'Cursive', sans-serif;
+    background: -webkit-linear-gradient(#ff7e5f, #feb47b);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    -o-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -ms-text-fill-color: transparent;
+    -o-text-fill-color: transparent;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  #task-input, #task-time, #task-color, #add-task {
+    margin: 5px 0;
+  }
+  
+  .task-entry {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  #task-input {
+    flex: 1;
+  }
+  
+  #task-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+  }
+  
+  #task-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  #task-list li span {
+    flex-grow: 1;
+    padding: 0 10px;
+  }
+  
+  #task-list li span.completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  #task-list li span.pinned {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .pin-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #007bff;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  input[type="text"], input[type="time"], select, button {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

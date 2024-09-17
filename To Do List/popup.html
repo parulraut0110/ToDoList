@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Simple To-Do List</h1>
+    <div class="actions">
+      <button id="clear-completed">Delete completed tasks</button>
+      <button id="delete-all">Delete all tasks</button>
+    </div>
+    <ul id="task-list"></ul>
+    <div class="task-entry">
+      <input type="text" id="task-input" placeholder="Type a new task...">
+      <input type="time" id="task-time">
+      <select id="task-color">
+        <option value="red">Red</option>
+        <option value="yellow">Yellow</option>
+        <option value="pink">Pink</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+      </select>
+      <button id="add-task">Add</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
+
